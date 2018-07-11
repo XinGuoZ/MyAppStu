@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:id="@+id/stunum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="学号"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/stupwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stunum"
+        android:layout_alignStart="@+id/stunum"
+        android:layout_below="@+id/stunum"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stupwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:onClick="login"
+        android:text="登入" />
+</RelativeLayout>
